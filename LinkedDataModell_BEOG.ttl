@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix alma: <https://open-eu.hosted.exlibrisgroup.com/alma/41SLSP_UBE/bf/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<alma:entity/99117157377505511#Work> 
+	bf:title "Aarberg dazumal" ;
+	bf:creator <http://viaf.org/viaf/sourceID/DNB/116337419/> ;
+	bf:subject bf:Place ;
+		bf:Place <http://d-nb.info/gnd/4084617-9> ;
+		bf:label "Aarberg" ;
+		bf:identifiedBy [ a bf:gnd ;
+					rdf:value "4084617-9" ] .
+	bf:instance 
+		rdf:resource <http://id.loc.gov/vocabulary/issuance/mono/> ;
+		bf:instance <alma:entity/instance/99117157377505511> ;
+		bflc:simpleAgent "Emmentaler Druck" ;
+		bflc:simplePlace "Langnau" ;
+		bflc:simpleDate "[1984]" ;
+		bf:identifiedBy [ a bf:Identifier ;
+					bf:source [rdfs:label "https://open-							eu.hosted.exlibrisgroup.com/alma/" ] ;
+					rdf:value "99117157377505511" ] .
+<http://viaf.org/viaf/sourceID/DNB/116337419/> bf:label "Gäumann, Ernst Albert" .
+
+<http://d-nb.info/gnd/4084617-9> owl:sameAs wikidata:Q64113 .
+wikidata:Q64113 
+	wikidata:P625 "47.04583333333"^^xsd:decimal , "7.276388888889"^^xsd:decimal ;
+	wikidata:P94 <https://commons.wikimedia.org/wiki/File:CHE_Aarberg_COA.svg> ;
+	wikidata:P856 <https://www.aarberg.ch/> ;
+	owl:sameAs <https://de.wikipedia.org/wiki/Aarberg> ; 
+	owl:sameAs <https://hls-dhs-dss.ch/de/articles/000172> ;
+	owl:sameAs <https://search.ortsnamen.ch/de/record/309000065> ;
+	wikidata:P1325 <https://ld.geo.admin.ch/boundaries/municipality/301> .
