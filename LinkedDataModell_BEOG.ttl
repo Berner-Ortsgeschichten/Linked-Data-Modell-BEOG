@@ -22,7 +22,7 @@
 		bflc:simplePlace "Langnau" ;
 		bflc:simpleDate "[1984]" ;
 		bf:identifiedBy [ a bf:Identifier ;
-					bf:source [rdfs:label "https://open-							eu.hosted.exlibrisgroup.com/alma/" ] ;
+					bf:source [rdfs:label "https://open-eu.hosted.exlibrisgroup.com/alma/" ] ;
 					rdf:value "99117157377505511" ] .
 <http://viaf.org/viaf/sourceID/DNB/116337419/> bf:label "Gäumann, Ernst Albert" .
 
